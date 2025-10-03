@@ -32,8 +32,7 @@ resource "aws_instance" "web" {
 
                 # Construir e executar o contêiner Docker
                 cd /app
-                sudo docker build -t streamlit-app .
-                sudo docker run -d -p 8501:8501 streamlit-app
+                sudo docker-compose up -d
                 EOF
 
 }
