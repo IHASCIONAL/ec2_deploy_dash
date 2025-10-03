@@ -27,7 +27,8 @@ resource "aws_instance" "web" {
                 sudo systemctl enable docker
 
                 # Clonar o repositório do GitHub
-                git clone git@github.com:IHASCIONAL/ec2_deploy_dash.git /app
+                git clone https://github.com/IHASCIONAL/ec2_deploy_dash.git /app
+
 
                 # Construir e executar o contêiner Docker
                 cd /app
