@@ -12,7 +12,7 @@ chart_data = pd.DataFrame(
 # Criando o gráfico no Streamlit
 st.pydeck_chart(
     pdk.Deck(
-        map_style='mapbox://styles/mapbox/light-v9',
+        map_style=None,
         initial_view_state=pdk.ViewState(
             latitude=37.76,
             longitude=-122.4,
